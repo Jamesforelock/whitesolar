@@ -1,0 +1,755 @@
+/* Установка и подключение шрифта */
+@font-face {
+    font-family: SFProDisplay; /* Гарнитура шрифта */
+    src: url(fonts/SFProDisplay-Regular.ttf); /* Путь к файлу со шрифтом */
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: SFProDisplay, 'Arial', cursive;
+}
+
+/* Header */
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+.header-container {
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    justify-content: center;
+}
+.hamburger-menu {
+    display: none;
+}
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-link {
+    color: grey;
+    text-decoration: none;
+}
+.nav-link:hover {
+    color: black;
+    transition: color 0.5s linear;
+}
+.bigH {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    width: 55px;
+    height: 55px;
+}
+
+/* Intro */
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    padding-top: 55px;
+    opacity: 0;
+    margin-top: 300px;
+}
+.intro-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.intro-title {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    font-size: 40px;
+    margin: 0;
+}
+.intro-desc {
+    font-size: 15px;
+    color: grey;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 5px;
+}
+.intro-button {
+    width: 180px;
+    height: 50px;
+    background-color: white;
+    border: 1px solid black;
+    margin-top: 35px;
+    font-size: 15px;;
+    cursor: pointer;
+    outline: none;
+}
+.intro-button:hover {
+    background-color: black;
+    color: white;
+    transition: 0.3s linear;
+}
+.intro-next {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+    align-items: center;
+    height: 50px;
+}
+.next {
+    width: auto;
+    height: 50px;
+}
+
+/* AboutUs */
+.aboutUs {
+    height: 1400px;
+    width: 100%;
+    background: no-repeat center url("../i/aboutUs-back.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+.aboutUs-container {
+    width: 80%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 170px;
+}
+.aboutUs-block {
+    align-self: flex-start;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+.aboutUs-block:nth-child(even) {
+    align-self: flex-end;
+}
+.aboutUs-block:nth-child(odd) .aboutUs-year{
+    align-self: flex-end;
+}
+.aboutUs-block:nth-child(3) {
+    margin-top: 100px;
+}
+.aboutUs-block:nth-child(4) {
+    margin-top: 70px;
+}
+.aboutUs-year {
+    color: white;
+    font-size: 40px;
+}
+.aboutUs-desc {
+    font-size: 15px;
+    color: grey;
+}
+
+/* Team */
+.team {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 700px;
+    padding-top: 200px;
+    text-align: center;
+}
+.team-container {
+    width: 80%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.team-title {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    font-size: 40px;
+    margin: 0;
+}
+.team-subtitle {
+    font-size: 15px;
+    color: rgb(141, 141, 141);
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.teammates {
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+    height: 700px;
+    width: 100%;
+}
+.teammate {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    cursor: pointer;
+}
+.teammate:hover .teammate-image {
+    height: 175px;
+}
+.teammate:nth-child(2) {
+    align-self: flex-start;
+}
+.teammate-image {
+    height: 150px;
+    width: auto;
+    border-radius: 200px;
+    transition: height 0.3s linear;
+}
+.teammate-title {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    font-size: 30px;
+    margin: 0;
+    margin-top: 15px;
+}
+.teammate-subtitle {
+    color: grey;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Provide */
+.provide {
+    background: center no-repeat url("../i/provide-back.png");
+    height: 1700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.provide-container {
+    color: white;
+    height: 1000px;
+    width: 80%;
+    max-width: 1500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 150px;
+}
+.provide-titleblock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.provide-title {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    font-size: 45px;
+}
+.provide-subtitle {
+    font-size: 20px;
+    color: rgb(141, 141, 141);
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.product-img {
+    width: auto;
+    height: 150px;
+}
+.provide-provision {
+    margin-bottom: 100px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.product {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.product-title {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: normal;
+    font-size: 30px;
+    margin: 0;
+    margin-top: 15px;
+}
+.product-desc {
+    color: rgb(50, 50, 50);
+    font-size: 18px;
+}
+.provide-button {
+    height: 70px;
+    width: 250px;
+    background-color: white;
+    border: none;
+    margin-top: 35px;
+    font-size: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+    outline: none;
+    text-transform: uppercase;
+}
+/* Contacts */
+.contacts {
+    height: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contacts-container {
+    width: 80%;
+    max-width: 800px;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+.contacts-titleblock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 150px;
+}
+.contacts-title {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    font-size: 40px;
+}
+.contacts-subtitle {
+    font-size: 18px;
+    color: rgb(141, 141, 141);
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.contacts-block {
+    display: flex;
+    width: 80%;
+    margin-top: 100px;
+    justify-content: space-between;
+}
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-icon {
+    width: 30px;
+    height: 30px;
+}
+.contact-title {
+    margin-top: 20px;
+    font-size: 15px;
+    color: rgb(141, 141, 141);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.contacts-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 500px;
+    margin-bottom: 180px;
+}
+.stringInput {
+    height: 50px;
+    text-align: center;
+    border: 1px solid lightgrey;
+    font-size: 15px;
+}
+.textInput {
+    resize: none;
+    height: 200px;
+    padding-top: 20px;
+    padding-left: 20px;
+    border: 1px solid lightgrey;
+    font-size: 15px;
+    font-family: SFProDisplay, 'Arial', cursive;
+}
+.submit {
+    height: 50px;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    outline: none;
+    cursor: pointer;
+}
+.copyright {
+    color: rgb(58, 58, 58);
+    font-size: 15px;
+}
+@media only screen and (max-width: 800px){
+    /* Header */
+    .hamburger-menu {
+        display: inherit;
+    }
+    /* скрываем чекбокс */
+    #menu__toggle {
+    opacity: 0;
+    }
+    /* стилизуем кнопку */
+    .menu__btn {
+        display: flex; /* используем flex для центрирования содержимого */
+        align-items: center;  /* центрируем содержимое кнопки */
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        z-index: 1;
+    }
+    /* добавляем "гамбургер" */
+    .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #616161;
+    }
+    .menu__btn > span::before {
+    content: '';
+    top: -8px;
+    }
+    .menu__btn > span::after {
+    content: '';
+    top: 8px;
+    }
+    /* контейнер меню */
+    .menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 150px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    text-align: center;
+    background-color: black;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    }
+    /* элементы меню */
+    .menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    }
+    .menu__item:hover {
+    background-color: white;
+    color: black;
+    }
+    #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+    }
+    #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+    }
+    #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+    }
+    #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+    }
+    .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+    transition-duration: .25s;
+    }
+    .menu__box {
+    transition-duration: .35s;
+    }
+    .menu__item {
+    transition-duration: .25s;
+    }
+    .nav {
+        display: none;
+        font-size: 10px;
+        height: auto;
+        flex-wrap: wrap;
+    }
+    .nav-link {
+        display: flex;
+        justify-content: center;
+        background-color: black;
+        align-items: center;
+        width: 40%;
+    }
+    .nav-link:hover {
+        color: white;
+    }
+    .bigH {
+        display: none;
+    }
+
+    /* Intro */
+    .intro {
+        height: 300px;
+        margin-top: 200px;
+    }
+    .intro-container {
+        width: 80%;
+    }
+    .intro-title {
+        font-size: 25px;
+    }
+    .intro-desc {
+        width: 80%;
+        text-align: center;
+        font-size: 13px;
+    }
+    .intro-button {
+        width: 105px;
+        height: 40px;
+        font-size: 15px;
+    }
+    .intro-button:hover {
+        background-color: black;
+        color: white;
+        transition: 0.3s linear;
+    }
+
+    /* AboutUs */
+    .aboutUs {
+        height: 720px;
+        background: black;
+    }
+    .aboutUs-container {
+        height: 100%;
+        width: 80%;
+        max-width: 900px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 30px;
+    }
+    .aboutUs-block {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .aboutUs-block:nth-child(even) {
+        align-self: flex-start;
+    }
+    .aboutUs-block:nth-child(odd) .aboutUs-year{
+        align-self: flex-start;
+    }
+    .aboutUs-block:nth-child(2) {
+        margin-top: 0;
+    }
+    .aboutUs-block:nth-child(3) {
+        margin-top: 0;
+    }
+    .aboutUs-block:nth-child(4) {
+        margin-top: 0;
+    }
+    .aboutUs-year {
+        color: white;
+        font-size: 40px;
+    }
+    .aboutUs-desc {
+        font-size: 15px;
+        color: grey;
+    }
+
+    /* Team */
+    .team {
+        height: 800px;
+        padding-top: 70px;
+    }
+    .team-container {
+        width: 80%;
+        max-width: 1000px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .team-title {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: lighter;
+        font-size: 40px;
+        margin: 0;
+    }
+    .team-subtitle {
+        font-size: 15px;
+        color: rgb(141, 141, 141);
+        font-style: italic;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .teammates {
+        margin-top: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 750px;
+        width: 100%;
+    }
+    .teammate {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        text-align: center;
+        cursor: pointer;
+    }
+    .teammate:hover .teammate-image {
+        height: 135px;
+    }
+    .teammate:nth-child(2) {
+        align-self: initial;
+    }
+    .teammate-image {
+        height: 135px;
+        width: auto;
+        border-radius: 200px;
+        transition: height 0.3s linear;
+    }
+    .teammate-title {
+        font-size: 25px;
+        margin: 0;
+        margin-top: 15px;
+    }
+    .teammate-subtitle {
+        font-size: 15px;
+    }
+    /* Provide */
+    .provide {
+        background: center no-repeat url("../i/provide-back.png");
+        height: 1700px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .provide-container {
+        padding-top: 180px;
+        color: white;
+        height: 1000px;
+        width: 80%;
+        max-width: 1500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 150px;
+    }
+    .provide-titleblock {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .provide-title {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: lighter;
+        font-size: 35px;
+    }
+    .provide-subtitle {
+        margin-top: 20px;
+        font-size: 15px;
+        color: rgb(141, 141, 141);
+        font-style: italic;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .product-img {
+        width: auto;
+        height: 125px;
+    }
+    .provide-provision {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .product {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 60px;
+    }
+    .product-title {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: normal;
+        font-size: 30px;
+        margin-top: 15px;
+        text-align: left;
+    }
+    .product-desc {
+        color: rgb(50, 50, 50);
+        font-size: 15px;
+        text-align: left;
+    }
+    .provide-button {
+        min-height: 50px;
+        width: 190px;
+        font-size: 20px;
+    }
+    /* Contacts */
+    .contacts {
+        height: 1000px;
+    }
+    .contacts-container {
+        padding-top: 180px;
+    }
+    .contacts-titleblock {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 80px;
+    }
+    .contacts-title {
+        font-size: 35px;
+    }
+    .contacts-subtitle {
+        font-size: 18px;
+    }
+    .contacts-block {
+        flex-direction: column;
+        text-align: center;
+    }
+    .contact-icon {
+        width: 30px;
+        height: 30px;
+    }
+    .contact-title {
+        font-size: 15px;
+    }
+    .stringInput {
+        font-size: 15px;
+    }
+    .textInput {
+        font-size: 15px;
+    }
+    .submit {
+        font-size: 15px;
+    }
+    .copyright {
+        font-size: 13px;
+        margin-bottom: 30px;
+        width: 70%;
+        text-align: center;
+    }
+}
